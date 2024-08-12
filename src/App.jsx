@@ -8,10 +8,10 @@ function App() {
     <>
       <MainHeader />
       <Routes>
-        <Route path="/" element={<Shop />}></Route>
-        <Route path="/men"></Route>
-        <Route path="/women"></Route>
-        <Route path="/kids"></Route>
+        <Route index element={<Shop />}></Route>
+        <Route path="/men" element={<Shop />}></Route>
+        <Route path="/women" element={<Shop />}></Route>
+        <Route path="/kids" element={<Shop />}></Route>
       </Routes>
     </>
   )
