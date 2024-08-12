@@ -5,7 +5,8 @@ import { useState } from "react";
 const MainHeader = () => {
 	const [page, setPage] = useState("");
 	return (
-		<header className="flex items-center justify-between h-48 px-20">
+		<header className="flex flex-wrap items-center sm:justify-between justify-center
+		sm:h-48 sm:px-20 py-4 gap-4">
 			<h1 className="flex items-center justify-between gap-4 text-4xl font-bold">
 				<span>
 					<img src={logo} alt="logo" />

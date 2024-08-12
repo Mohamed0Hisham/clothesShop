@@ -3,23 +3,23 @@ import heroImg from "../Assets/hero_image.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 const Landing = () => {
 	return (
-		<div className=" bg-gradient-to-b from-light-pink to-light-green p-9 rounded-lg shadow-md">
+		<div className=" sm:h-fit h-full w-full bg-gradient-to-b from-light-pink to-light-green p-9 rounded-lg shadow-md">
 			<h1 className=" text-4xl">NEW ARRIVALS ONLY</h1>
 			<br />
 			<br />
 			<div className="grid grid-cols-2">
-				<div className="flex flex-col justify-around items-center">
-					<p className=" text-5xl font-bold">
+				<div className="flex flex-col justify-around items-center text-2xl">
+					<p className=" sm:text-5xl font-bold">
 						new
 						<span>
 							<img
 								src={handIcon}
 								alt="handIcon"
-								className=" w-24 inline-block "
+								className=" sm:w-24 w-12 inline-block "
 							/>
 						</span>
 					</p>
-					<p className=" text-5xl font-bold">
+					<p className=" sm:text-5xl font-bold">
 						collections <br /> for everyone
 					</p>
 				</div>
