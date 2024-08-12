@@ -1,6 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 import MainHeader from "./components/MainHeader"
 import Shop from "./pages/shop"
+import Index from "./pages/Index"
+import Men from "./pages/men"
+import Women from "./pages/women"
+import Kids from "./pages/kids"
 
 function App() {
 
@@ -8,10 +12,11 @@ function App() {
     <>
       <MainHeader />
       <Routes>
-        <Route index element={<Shop />}></Route>
-        <Route path="/men" element={<Shop />}></Route>
-        <Route path="/women" element={<Shop />}></Route>
-        <Route path="/kids" element={<Shop />}></Route>
+        <Route index element={<Index />}></Route>
+        <Route path="/shop" element={<Shop />}></Route>
+        <Route path="/men" element={<Men />}></Route>
+        <Route path="/women" element={<Women />}></Route>
+        <Route path="/kids" element={<Kids />}></Route>
       </Routes>
     </>
   )

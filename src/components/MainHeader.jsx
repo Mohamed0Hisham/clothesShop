@@ -7,12 +7,12 @@ const MainHeader = () => {
 	return (
 		<header className="flex flex-wrap items-center sm:justify-between justify-center
 		sm:h-48 sm:px-20 py-4 gap-4">
-			<h1 className="flex items-center justify-between gap-4 text-4xl font-bold">
+			<Link to='/' className="flex items-center justify-between gap-4 text-4xl font-bold">
 				<span>
 					<img src={logo} alt="logo" />
 				</span>
 				<span>SHOPPER</span>
-			</h1>
+			</Link>
 			<ul className="flex  items-center justify-between gap-9 text-2xl ">
 				<li
 					className={
@@ -20,7 +20,7 @@ const MainHeader = () => {
 						"border-b-2 border-light-red" :
 						" "
 					} >
-					<Link to="/" onClick={() => setPage("shop")}>
+					<Link to="/shop" onClick={() => setPage("shop")}>
 						Shop
 					</Link>
 				</li>

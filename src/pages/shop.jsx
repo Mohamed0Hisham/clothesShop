@@ -1,19 +1,14 @@
+import List from "../model/List";
+import all_products from "../assets/all_product";
 import Footer from "../components/footer";
-import Landing from "../components/landing";
-import NewCollection from "../components/newCollection";
-import PopularGallary from "../components/popularGallary";
-import SpecialOffer from "../components/specialOffer";
-
 const Shop = () => {
 	return (
 		<>
 			<section className=" container relative left-1/2  -translate-x-1/2 sm:px-8">
-				<Landing />
-				<PopularGallary />
-				<SpecialOffer />
-				<NewCollection />
-				<Footer />
+				<h1 className="text-4xl uppercase font-bold text-center mb-8">Here You can find all products</h1>
+				<List products = {all_products} />
 			</section>
+			<Footer />
 		</>
 	);
 };
