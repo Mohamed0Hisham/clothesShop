@@ -7,6 +7,9 @@ export default {
 				'light-red':'#ff4141',
 				'light-pink':'#fde1ff',
 				'light-green':'#0e8b3322'
+			},
+			screens:{
+				
 			}
 		},
 	},

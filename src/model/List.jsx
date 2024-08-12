@@ -3,7 +3,7 @@ import Product from "./product";
 
 const List = ({products}) => {
 	return (
-		<div className=" grid grid-cols-4 gap-y-4">
+		<div className="flex flex-wrap items-center justify-center gap-y-4 gap-x-4 w-full ">
 			{products.map((item, i) => {
 				return (
 					<Product
