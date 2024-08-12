@@ -1,7 +1,14 @@
 import { MdOutlineAddShoppingCart } from "react-icons/md";
+import { useDispatch } from "react-redux";
+import { addToCart_Action } from "../redux/action";
 
 const Product = (props) => {
     const {id,name,image,new_price,old_price} = props;
+    const dispatch = useDispatch();
+    
+    const addToCart = ()=>{
+        dispatch(addToCart_Action(props))
+    }
 	return (
 		<div className="w-80 rounded-t-md">
 			<div>
@@ -13,7 +20,7 @@ const Product = (props) => {
                     <span className=" line-through" >{old_price}$</span>
                     <span>{new_price}$</span>
                 </div>
-                <button className='text-4xl bg-sky-400 p-3 rounded-xl text-white'>
+                <button onClick={()=>addToCart()} className='text-4xl bg-sky-400 p-3 rounded-xl text-white'>
 					<MdOutlineAddShoppingCart />
 				</button>
             </div>
