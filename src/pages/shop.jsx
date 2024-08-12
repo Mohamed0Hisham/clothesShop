@@ -7,12 +7,12 @@ import SpecialOffer from "../components/specialOffer";
 const Shop = () => {
 	return (
 		<>
-			<Landing />
 			<section className=" container relative left-1/2  -translate-x-1/2 sm:px-8">
-					<PopularGallary />
-					<SpecialOffer />
-					<NewCollection />
-					<Footer />
+				<Landing />
+				<PopularGallary />
+				<SpecialOffer />
+				<NewCollection />
+				<Footer />
 			</section>
 		</>
 	);
