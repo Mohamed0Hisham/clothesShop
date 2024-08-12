@@ -8,7 +8,7 @@ const NewCollection = () => {
 				New Collections
 				<hr className="absolute left-1/2 -translate-x-1/2 w-96 text-black mt-4" />
 			</h1>
-			<div>
+			<div className="w-full">
 				<List products={new_collections} />
 			</div>
 		</div>

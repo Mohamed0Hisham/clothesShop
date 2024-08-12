@@ -1,7 +1,7 @@
 import Footer from "../components/footer";
 import Landing from "../components/landing";
 import NewCollection from "../components/newCollection";
-import PopularGallary from "../components/popularGallary";
+import PopularGallary from "../components/popularGallary/popularGallary";
 import SpecialOffer from "../components/specialOffer";
 
 const Index = () => {

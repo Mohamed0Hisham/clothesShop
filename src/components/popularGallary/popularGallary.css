@@ -1,0 +1,39 @@
+.gallary{
+    position: relative;
+    background:  rgb(253 225 255);
+    border-radius: 0.5rem;
+}
+.mobile-gallary {
+    position: relative;
+    background:  rgb(253 225 255);
+    border-radius: 0.5rem;
+}
+.ipad-gallary{
+    position: relative;
+    background:  rgb(253 225 255);
+    border-radius: 0.5rem;
+}
+@media screen and (max-width: 767px){
+    .gallary{
+        display:none;
+    }
+    .ipad-gallary{
+        display: none;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1166px) {
+    .gallary{
+        display: none;
+    }
+    .mobile-gallary{
+        display: none;
+    }
+}
+@media screen and (min-width: 1166px) {
+    .ipad-gallary{
+        display: none;
+    }
+    .mobile-gallary{
+        display: none;
+    }
+}
