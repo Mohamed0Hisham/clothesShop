@@ -1,4 +1,4 @@
 # React + Vite
 
-Clothes Shop Mern Stack Project
+Clothes Shop React Redux Project
 
